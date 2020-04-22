@@ -32,18 +32,18 @@
             $sql = "INSERT INTO name_list (name, details) VALUES (?, ?)";
             $stmt = mysqli_prepare($connection, $sql);
 
-            if ( !$stmt ) {
-              die('mysqli error: '. mysqli_error($connection));
-            }
+            // if ( !$stmt ) {
+              // die('mysqli error: '. mysqli_error($connection));
+            // }
 
             $param_name = $name;
             $param_address = $details;
 
             mysqli_stmt_bind_param($stmt, "ss", $param_name, $param_address);
 
-            if ( !mysqli_execute($stmt) ) {
-              die( 'stmt error: '.mysqli_stmt_error($stmt) );
-            }
+            // if ( !mysqli_execute($stmt) ) {
+              // die( 'stmt error: '.mysqli_stmt_error($stmt) );
+            // }
 
             if(mysqli_stmt_execute($stmt)){
                 header("location: index.php");
