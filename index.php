@@ -67,12 +67,12 @@
     <meta charset="UTF-8">
     <title>Dashboard</title>
 
-    <link rel="stylesheet" href="bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="jquery.dataTables.min.css">
-    <link rel="stylesheet" href="main.min.css">
+    <link rel="stylesheet" href="assets/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="assets/main.min.css">
 
-    <script src="jquery-3.3.1.js" charset="utf-8"></script>
-    <script src="jquery.dataTables.min.js" charset="utf-8"></script>
+    <script src="assets/jquery-3.3.1.js" charset="utf-8"></script>
+    <script src="assets/jquery.dataTables.min.js" charset="utf-8"></script>
 
 </head>
 <body>
