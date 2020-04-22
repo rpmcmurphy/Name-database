@@ -67,15 +67,26 @@
     <meta charset="UTF-8">
     <title>Dashboard</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="jquery.dataTables.min.css">
     <link rel="stylesheet" href="main.min.css">
 
-    <script src="https://code.jquery.com/jquery-3.3.1.js" charset="utf-8"></script>
-    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" charset="utf-8"></script>
+    <script src="jquery-3.3.1.js" charset="utf-8"></script>
+    <script src="jquery.dataTables.min.js" charset="utf-8"></script>
 
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">NameDB</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNameDB" aria-controls="navbarNameDB" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNameDB">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+        </div>
+      </div>
+    </nav>
     <div class="wrapper">
 
         <div class="container-fluid">
@@ -83,6 +94,7 @@
                 <div class="col-md-12">
                     <div class="page-header">
                         <h6>Add name</h6>
+                        <hr>
                     </div>
 
                     <?php if($error !== "") { echo "<p class='text-danger'>". $error ."</p>"; } ?>
@@ -107,6 +119,7 @@
                 <div class="col-md-12">
                     <div class="page-header">
                         <h6>Name list</h6>
+                        <hr>
                     </div>
                     <?php
                     $sql = "SELECT * FROM name_list";
